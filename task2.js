@@ -10,3 +10,7 @@ function form_matrix(N, M) {
     }
     return matrix
 }
+
+function show_matrix() {
+
+}
