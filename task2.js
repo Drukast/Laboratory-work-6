@@ -20,6 +20,7 @@ function show_matrix(matrix) {
 }
 
 function search_max_in_rows(matrix) {
+    let max = -999, row = [];
     for (var i = 0; i < matrix.length; i++) {
         for (var j = 0; j < matrix[i].length; j++) {
             if (matrix[i][j] > max) {
