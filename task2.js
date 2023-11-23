@@ -18,3 +18,18 @@ function show_matrix(matrix) {
     }
     alert(matrix_out.join('\n'));
 }
+
+function search_max_in_rows(matrix) {
+    for (var i = 0; i < matrix.length; i++) {
+        for (var j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] > max) {
+                rows = [];
+                max = matrix[i][j];
+                rows.push(i + 1);
+            } else if (matrix[i][j] == max) {
+                rows.push(i + 1);
+            }
+        }
+    }
+    alert(`Максимальный элемент содержится в строках: ${rows}`);
+}
