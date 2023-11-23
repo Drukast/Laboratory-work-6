@@ -1,6 +1,6 @@
 /*Для любого задания лабораторыных работ №5 и №6 реализовать ввод, формирование/обработку и вывод массивов с применением функций*/
 function form_matrix(N, M) {
-    matrix = []
+    matrix = [];
     for (var i = 0; i < M; i++) {
         let submatrix = [];
         for (var j = 0; j < N; j++) {
@@ -8,9 +8,13 @@ function form_matrix(N, M) {
         }
         matrix.push(submatrix);
     }
-    return matrix
+    return matrix;
 }
 
-function show_matrix() {
-
+function show_matrix(matrix) {
+    matrix_out = [];
+    for (let i = 0; i < matrix.length; i++) {
+        matrix_out.push(matrix[i].join('     '));
+    }
+    alert(matrix_out.join('\n'));
 }
