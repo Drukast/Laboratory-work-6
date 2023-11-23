@@ -34,3 +34,12 @@ function search_max_in_rows(matrix) {
     }
     alert(`Максимальный элемент содержится в строках: ${rows}`);
 }
+
+let N, M;
+M = Number(prompt("Введите Кол-во Строк", ""));
+N = Number(prompt("Введите Кол-во столбцов", ""));
+if ((!(isNaN(M)) && (M % 1 == 0) && (M > 0)) && (!(isNaN(N)) && (N % 1 == 0) && (N > 0))) {
+    Matrix = form_matrix(N, M);
+    show_matrix(Matrix);
+    search_max_in_rows(Matrix);
+}
