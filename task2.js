@@ -42,4 +42,6 @@ if ((!(isNaN(M)) && (M % 1 == 0) && (M > 0)) && (!(isNaN(N)) && (N % 1 == 0) && 
     Matrix = form_matrix(N, M);
     show_matrix(Matrix);
     search_max_in_rows(Matrix);
+} else {
+    alert('Введены неверные значения размеров!')
 }
