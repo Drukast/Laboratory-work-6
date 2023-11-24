@@ -11,11 +11,12 @@ function form_matrix(N, M) {
 }
 
 function show_matrix(matrix) {
-    let matrix_out = [];
+    let matrix_out = [], result;
     for (let i = 0; i < matrix.length; i++) {
         matrix_out.push(matrix[i].join('     '));
     }
-    alert(matrix_out.join('\n'));
+    result = matrix_out.join('\n')
+    alert(result);
 }
 
 function search_max_in_rows(matrix) {
