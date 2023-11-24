@@ -1,4 +1,5 @@
 function form_matrix(N, M) {
+    let matrix;
     matrix = [];
     for (var i = 0; i < M; i++) {
         let submatrix = [];
@@ -11,6 +12,7 @@ function form_matrix(N, M) {
 }
 
 function show_matrix(matrix) {
+    let matrix_out;
     matrix_out = [];
     for (let i = 0; i < matrix.length; i++) {
         matrix_out.push(matrix[i].join('     '));
